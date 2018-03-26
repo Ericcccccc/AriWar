@@ -1,0 +1,180 @@
+/* 
+ * author: liu
+ */
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-size: 14px;
+	background-color: #555;
+}
+body >div:last-child {
+	display: none;
+}
+
+#wrap {
+	display: table;
+	width: 480px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#wrap canvas {
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+}
+#wrap .playing {
+	cursor: none;
+}
+#box {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+	height: 300px;
+	border: 2px solid #666;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	font-size: 20px;
+	background-color: #ddd;
+	z-index: 1001;
+}
+#start, #setting, #pause {
+	position: absolute;
+	top:400px;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	height:200px;
+	/*border: 2px solid #666;*/
+	-webkit-border-radius: 8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	font-size: 20px;
+	background-color: transparent;
+	z-index: 1001;
+}
+@media screen and (max-width: 480px) {
+	#wrap {
+		width: 100%;
+	}
+	#box {
+		width: 94%;
+		top:150px;
+		left: 3%;
+		margin: 0;
+	}
+}
+
+.hide{
+	display: none;
+}
+#box .header{
+	height: 45px;
+	border-bottom: 2px solid #666;
+	font-weight: bold;
+	text-align: center;
+	line-height: 45px;
+}
+#box .content{
+	height: 210px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 210px;
+}
+#box .footer{
+	height: 45px;
+	border-top: 2px solid #666;
+	text-align: center;
+	line-height: 45px;
+}
+#box .footer .again{
+	position: absolute;
+	bottom: 4px;
+	left: 10%;
+	margin-left: -24px;
+	width: 120px;
+	height: 30px;
+	border: 2px solid #666;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#box .footer .music {
+	position: absolute;
+	bottom: 4px;
+	left: 59%;
+	margin-left: -96px;
+	width: 120px;
+	height: 30px;
+	border: 2px solid #666;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#box .footer .exit {
+	position: absolute;
+	bottom: 4px;
+	left: 90%;
+	margin-left: -96px;
+	width: 120px;
+	height: 30px;
+	border: 2px solid #666;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#start .start,#start .setting,#start .exit {
+	height: 45px;
+	margin-bottom: 15px;
+	border:2px solid #666;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 45px;
+	cursor:pointer;
+}
+#setting .musicOn,#setting .musicOff {
+	height: 45px;
+	margin-bottom: 15px;
+	border:2px solid #666;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 45px;
+	cursor:pointer;
+}
+#pause .continue, #pause .newGame, #pause .exit {
+	height: 45px;
+	margin-bottom: 15px;
+	border:2px solid #666;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 45px;
+	cursor:pointer;
+}

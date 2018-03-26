@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>飞机大战</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="wrap">
+		<div id="start" class="hide">
+			<div class="start">开 始</div>
+			<div class="setting">设 置</div>
+			<div class="exit">退出游戏</div>
+		</div>
+		<div id="setting" class="hide">
+			<div class="musicOn">开启声音</div>
+			<div class="musicOff">关闭声音</div>
+		</div>
+		<div id="box" class="hide">
+			<div class="header">飞机大战分数</div>
+			<div class="content" id="content">0</div>
+			<div class="footer">
+				<button class="again">再来一次</button>
+				<button class="music">开/关声音</button>
+				<button class="exit">退出游戏</button>
+			</div>
+		</div>
+		<div id="pause" class="hide">
+			<div class="continue">继 续</div>
+			<div class="newGame">新游戏</div>
+			<div class="exit">退出游戏</div>
+		</div>
+		<canvas id="game-box"></canvas>
+	</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/style.js"></script>
+</html>
